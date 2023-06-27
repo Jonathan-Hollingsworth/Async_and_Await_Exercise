@@ -1,0 +1,30 @@
+body {
+    background-color: seagreen;
+    margin: 0;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: crimson;
+    color: aliceblue;
+    font-size: xx-large;
+    border-radius: 12px;
+}
+
+img {
+    width: 100px;
+    margin: 3px;
+}
+
+#drawn {
+    display: block;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
