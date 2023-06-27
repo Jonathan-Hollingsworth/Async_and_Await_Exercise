@@ -9,9 +9,9 @@ while (random3 === random1 || random3 === random2) {
 }
 
 async function getPokémon() {
-    const promise1 = await axios.get(`https://pokeapi.co/api/v2/pokemon/${random1}`)
-    const promise2 = await axios.get(`https://pokeapi.co/api/v2/pokemon/${random2}`)
-    const promise3 = await axios.get(`https://pokeapi.co/api/v2/pokemon/${random3}`)
+    const promise1 = axios.get(`https://pokeapi.co/api/v2/pokemon/${random1}`)
+    const promise2 = axios.get(`https://pokeapi.co/api/v2/pokemon/${random2}`)
+    const promise3 = axios.get(`https://pokeapi.co/api/v2/pokemon/${random3}`)
     
     const pokémonArr = await Promise.all([promise1, promise2, promise3])
     for (let pokémon of pokémonArr) {
